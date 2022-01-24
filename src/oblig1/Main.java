@@ -14,7 +14,7 @@ public class Main {
         Queue<Fly> landingKo = new LinkedList<>();
         Queue<Fly> letteKo = new LinkedList<>();
         Integer id = 0;
-        final Integer maks_i_ko = 10; 
+        final Integer maks_i_ko = 10;
 
         //tidsregning
         for (int i = 0; i < tidsenhet; i++) {
