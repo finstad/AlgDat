@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="" />
+    <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig1/Fly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oblig1/Fly.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oblig1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig1/Flyplass.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,9 +42,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oblig1.Main" />
+  <component name="RunManager" selected="Application.Flyplass">
+    <configuration name="Flyplass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oblig1.Flyplass" />
       <module name="AlgDat" />
       <extension name="coverage">
         <pattern>
@@ -91,7 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Flyplass" />
         <item itemvalue="Application.Postfix" />
         <item itemvalue="Application.snuInput" />
         <item itemvalue="Application.oppg2_1" />
@@ -111,10 +117,22 @@
       <updated>1642868978574</updated>
       <workItem from="1642868983233" duration="12694000" />
       <workItem from="1643020266448" duration="8486000" />
+      <workItem from="1643109720359" duration="6831000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
