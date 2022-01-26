@@ -40,8 +40,11 @@ public class Flyplass {
         Queue<Fly> landingKo = new LinkedList<>();
         Queue<Fly> letteKo = new LinkedList<>();
         Integer id = 0;
-        Integer totAnkommnefly = 0;
-        Integer avvisteFly = 0;
+        int totAnkommnefly = 0;
+        int avvisteFly = 0;
+        int fly_landet = 0;
+        int fly_lettet = 0;
+        int tomFlyplass = 0;
 
 
 
@@ -79,11 +82,14 @@ public class Flyplass {
             if(!landingKo.isEmpty()){
                 Fly landetFly = landingKo.remove();
                 System.out.println("Fly " + landetFly.getId() + " landet");
+                fly_landet++;
             } else if (!letteKo.isEmpty()){
                 Fly lettetFly = letteKo.remove();
                 System.out.println("Fly " + lettetFly.getId() + " lettet");
+                fly_lettet++;
             } else{
                 System.out.println("Flyplassen er tom");
+                tomFlyplass++;
             }
 
             System.out.println("");
@@ -91,7 +97,8 @@ public class Flyplass {
 
         System.out.println("Totalt ankomne fly: " + totAnkommnefly);
         System.out.println("Totalt avviste fly: " + avvisteFly);
-
+        System.out.println("Prosenandel flyplassen var tom " + ((float) tomFlyplass/ (float) tidsenhet)*100);
+        System.out.println(letteKo);
     }
 
     private static int getPoissonRandom(double mean)
