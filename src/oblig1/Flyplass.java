@@ -24,8 +24,10 @@ public class Flyplass {
 
     private class Fly {
         Integer id;
-        public Fly(Integer id){
+        Integer tidsenhet;
+        public Fly(Integer id,Integer tidsenhet){
             this.id = id;
+            this.tidsenhet = tidsenhet;
         }
         public Integer getId() {
             return id;
@@ -39,34 +41,38 @@ public class Flyplass {
         Queue<Fly> letteKo = new LinkedList<>();
         Integer id = 0;
         Integer totAnkommnefly = 0;
-        Integer avisteFly = 0;
+        Integer avvisteFly = 0;
 
 
 
         //tidsregning
         for (int i = 0; i < tidsenhet; i++) {
-            System.out.println("Tidsenhet: " + i);
+            System.out.println("Tidsenhet: " + (i+1));
 
             for (int j = 0; j < getPoissonRandom(ankomst); j++) {
-                Fly fly = new Fly(id);
+                Fly fly = new Fly(id, i);
                 System.out.println("Fly " + fly.getId() + " ønsker å lande");
                 if (landingKo.size() > maks_i_ko){
                     System.out.println("Køen er full, fly " + fly.getId() + " henvist til nærmeste flyplass");
+                    avvisteFly++;
                 } else {
                     landingKo.add(fly);
                 }
                 id++;
+                totAnkommnefly++;
             }
 
             for (int j = 0; j < getPoissonRandom(avgang); j++) {
-                Fly fly = new Fly(id);
+                Fly fly = new Fly(id, i);
                 System.out.println("Fly " + fly.getId() + " ønsker å ta av");
                 if (letteKo.size() > maks_i_ko){
                     System.out.println("Avgangen er kanselert for fly " + fly.getId() + ", køen er full");
+                    avvisteFly++;
                 } else {
                     letteKo.add(fly);
                 }
                 id++;
+                totAnkommnefly++;
             }
 
 
@@ -82,6 +88,10 @@ public class Flyplass {
 
             System.out.println("");
         }
+
+        System.out.println("Totalt ankomne fly: " + totAnkommnefly);
+        System.out.println("Totalt avviste fly: " + avvisteFly);
+
     }
 
     private static int getPoissonRandom(double mean)
