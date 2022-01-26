@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig1/Fly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oblig1/Fly.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oblig1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig1/Flyplass.java" afterDir="false" />
-    </list>
+    <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +111,7 @@
       <updated>1642868978574</updated>
       <workItem from="1642868983233" duration="12694000" />
       <workItem from="1643020266448" duration="8486000" />
-      <workItem from="1643109720359" duration="6831000" />
+      <workItem from="1643109720359" duration="6832000" />
     </task>
     <servers />
   </component>
