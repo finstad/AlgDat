@@ -32,6 +32,7 @@ public class Flyplass {
         public Integer getId() {
             return id;
         }
+        public Integer getTidsenhet() { return tidsenhet;}
     }
 
 
@@ -45,6 +46,10 @@ public class Flyplass {
         int fly_landet = 0;
         int fly_lettet = 0;
         int tomFlyplass = 0;
+        int lengde_letteKo = 0;
+        int lengde_landeKo = 0;
+        int venteTidLanding = 0;
+        int venteTidlette = 0;
 
 
 
@@ -53,7 +58,7 @@ public class Flyplass {
             System.out.println("Tidsenhet: " + (i+1));
 
             for (int j = 0; j < getPoissonRandom(ankomst); j++) {
-                Fly fly = new Fly(id, i);
+                Fly fly = new Fly(id, i+1);
                 System.out.println("Fly " + fly.getId() + " ønsker å lande");
                 if (landingKo.size() > maks_i_ko){
                     System.out.println("Køen er full, fly " + fly.getId() + " henvist til nærmeste flyplass");
@@ -66,9 +71,9 @@ public class Flyplass {
             }
 
             for (int j = 0; j < getPoissonRandom(avgang); j++) {
-                Fly fly = new Fly(id, i);
+                Fly fly = new Fly(id, i+1);
                 System.out.println("Fly " + fly.getId() + " ønsker å ta av");
-                if (letteKo.size() > maks_i_ko){
+                if (letteKo.size() >= maks_i_ko){
                     System.out.println("Avgangen er kanselert for fly " + fly.getId() + ", køen er full");
                     avvisteFly++;
                 } else {
@@ -83,10 +88,14 @@ public class Flyplass {
                 Fly landetFly = landingKo.remove();
                 System.out.println("Fly " + landetFly.getId() + " landet");
                 fly_landet++;
+                lengde_landeKo += landingKo.size();
+                venteTidLanding += (i+1 - landetFly.getTidsenhet());
             } else if (!letteKo.isEmpty()){
                 Fly lettetFly = letteKo.remove();
                 System.out.println("Fly " + lettetFly.getId() + " lettet");
                 fly_lettet++;
+                lengde_letteKo += letteKo.size();
+                venteTidlette += (i+1 - lettetFly.getTidsenhet());
             } else{
                 System.out.println("Flyplassen er tom");
                 tomFlyplass++;
@@ -97,8 +106,15 @@ public class Flyplass {
 
         System.out.println("Totalt ankomne fly: " + totAnkommnefly);
         System.out.println("Totalt avviste fly: " + avvisteFly);
+        System.out.println("Totale fly landet: " + fly_landet);
+        System.out.println("Totale fly lettet: " + fly_lettet);
         System.out.println("Prosenandel flyplassen var tom " + ((float) tomFlyplass/ (float) tidsenhet)*100);
-        System.out.println(letteKo);
+        System.out.println("Gjennomsnittlig lengde landingskø " + ((float) lengde_landeKo/ (float) tidsenhet));
+        System.out.println("Gjennomsnittlig lengde lettekø " + ((float) lengde_letteKo/ (float) tidsenhet));
+        System.out.println("Gjennomsnittlig ventetid landing: " + ((float) venteTidLanding/ (float) fly_landet));
+        System.out.println("Gjennomsnittlig ventetid avgang: " + ((float) venteTidlette/ (float) fly_lettet));
+
+
     }
 
     private static int getPoissonRandom(double mean)
