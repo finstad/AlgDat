@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ovingRekursiv/oppg2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oblig1/Flyplass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig1/Flyplass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +39,26 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Flyplass">
+  <component name="RunManager" selected="Application.oppg2">
     <configuration name="Flyplass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oblig1.Flyplass" />
       <module name="AlgDat" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="oblig1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Palindrom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ovingRekursiv.Palindrom" />
+      <module name="AlgDat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ovingRekursiv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="oppg2_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ovingStack.oppg2_1" />
+    <configuration name="oppg2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ovingRekursiv.oppg2" />
       <module name="AlgDat" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ovingStack.*" />
+          <option name="PATTERN" value="ovingRekursiv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,10 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.oppg2" />
+        <item itemvalue="Application.Palindrom" />
         <item itemvalue="Application.Flyplass" />
         <item itemvalue="Application.Postfix" />
         <item itemvalue="Application.snuInput" />
-        <item itemvalue="Application.oppg2_1" />
       </list>
     </recent_temporary>
   </component>
@@ -118,6 +132,7 @@
       <workItem from="1643199755462" duration="1566000" />
       <workItem from="1643224967485" duration="2663000" />
       <workItem from="1643270650520" duration="1503000" />
+      <workItem from="1643803044675" duration="3266000" />
     </task>
     <servers />
   </component>
@@ -142,25 +157,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1643271766609" />
-    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1643272155899">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1644240839263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1643272155899" />
-    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1643272155899">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1644240839263" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1644240839263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1643272155899" />
-    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1643272155899">
+    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1644240839263" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1644240839263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1643272155899" />
-    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1643272155899">
+    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1644240839263" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1644240839263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1643272155899" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1643270649819">
+    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1644240839263" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1643803064299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1643270649819" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1643803064299" />
   </component>
 </project>
