@@ -2,7 +2,7 @@
 package oblig2;
 
 class KnightTour {
-    static int N = 5;
+    static int N = 8;
 
     /* A utility function to check if i,j are
     valid indexes for N*N chessboard */

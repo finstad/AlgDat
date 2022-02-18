@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class springerProblemet {
 
     int LEDIG = 0, BRUKT = 1;
-    int trekkNr = 1;
 
     int n;
     int brett[][];
@@ -25,9 +24,9 @@ public class springerProblemet {
             }
         }
 
-        brett[0][0] = BRUKT;
+        brett[y][x] = BRUKT;
 
-        if (!finnVei(x, y, 1)){
+        if (!finnVei(y, x, 1)){
             System.out.println("Ingen løsning funnet!");
         } else {
             System.out.println("Løsning funnet!");
@@ -42,8 +41,8 @@ public class springerProblemet {
             return true;
         }
 
-        int dI[] = { 2, 1, -1, -2, -2, -1, 1, 2 };
-        int dJ[] = { 1, 2, 2, 1, -1, -2, -2, -1 };
+        int dI[] = { -2, -1, 1, 2, 2, 1, -1, -2};
+        int dJ[] = { -1, -2, -2, -1,  1, 2, 2, 1 };
 
         for (int k = 0; k < 8; k++) {
             int nyI = i + dI[k];
@@ -104,9 +103,13 @@ public class springerProblemet {
         Scanner scanner = new Scanner(System.in);
         System.out.print("n?: ");
         int n = scanner.nextInt();
+        System.out.println("Start koordinat x: ");
+        int x = scanner.nextInt();
+        System.out.println("Start koordinat y: ");
+        int y = scanner.nextInt();
 
         // Oppretter ny labyrint
-        springerProblemet lab = new springerProblemet(n, 0, 0);
+        springerProblemet lab = new springerProblemet(n, x, y);
 
 
     }
