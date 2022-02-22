@@ -30,7 +30,7 @@ public class springerProblemet {
             System.out.println("Ingen løsning funnet!");
         } else {
             System.out.println("Løsning funnet!");
-            skrivLosning(brett);
+            skrivLosning();
         }
     }
 
@@ -63,30 +63,9 @@ public class springerProblemet {
         return false;
     }
 
-
-    // Gjør om labyrinten til en tekststreng for utskrift, markerer
-    // evt. funnet vei med stjerner ('*')
-    /*public String toString() {
-        String result = "\n";
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                result += L[i][j] + " ";
-            }
-            result += "\n";
-        }
-        return result;
-    }*/
-
-    public void skrivLosning(int brett[][]){
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(brett[i][j] + " ");
-            }
-            System.out.println();
-        }
+    public void skrivLosning(){
 
         System.out.println();
-
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(utskriftBrett[i][j] + " ");
@@ -109,8 +88,7 @@ public class springerProblemet {
         int y = scanner.nextInt();
 
         // Oppretter ny labyrint
-        springerProblemet lab = new springerProblemet(n, x, y);
-
+        springerProblemet sjakk = new springerProblemet(n, x, y);
 
     }
 }

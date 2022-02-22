@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oblig2/KnightTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig2/KnightTour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oblig2/KnightTour.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/oblig2/springerProblemet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig2/springerProblemet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oblig2/testLosning.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.KnightTour">
+  <component name="RunManager" selected="Application.springerProblemet">
     <configuration name="Flyplass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oblig1.Flyplass" />
       <module name="AlgDat" />
@@ -108,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KnightTour" />
         <item itemvalue="Application.springerProblemet" />
+        <item itemvalue="Application.KnightTour" />
         <item itemvalue="Application.testLosning" />
         <item itemvalue="Application.Flyplass" />
         <item itemvalue="Application.oppg2" />
@@ -139,6 +140,7 @@
       <workItem from="1645011416251" duration="6413000" />
       <workItem from="1645097655892" duration="4640000" />
       <workItem from="1645187778380" duration="1863000" />
+      <workItem from="1645528656251" duration="282000" />
     </task>
     <servers />
   </component>
