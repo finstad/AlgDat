@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oblig2/KnightTour.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oblig2/springerProblemet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig2/springerProblemet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oblig2/testLosning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig2/KnightTour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig2/testLosning.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.springerProblemet">
+  <component name="RunManager" selected="Application.sortering">
     <configuration name="Flyplass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oblig1.Flyplass" />
       <module name="AlgDat" />
@@ -68,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="oppg2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ovingRekursiv.oppg2" />
+    <configuration name="sortering" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oblig3.sortering" />
       <module name="AlgDat" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ovingRekursiv.*" />
+          <option name="PATTERN" value="oblig3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sortering" />
         <item itemvalue="Application.springerProblemet" />
         <item itemvalue="Application.KnightTour" />
         <item itemvalue="Application.testLosning" />
         <item itemvalue="Application.Flyplass" />
-        <item itemvalue="Application.oppg2" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +140,12 @@
       <workItem from="1645097655892" duration="4640000" />
       <workItem from="1645187778380" duration="1863000" />
       <workItem from="1645528656251" duration="282000" />
+      <workItem from="1645532625925" duration="2300000" />
+      <workItem from="1646040756550" duration="6702000" />
+      <workItem from="1646071612487" duration="2265000" />
+      <workItem from="1646133694227" duration="5483000" />
+      <workItem from="1646223912417" duration="1833000" />
+      <workItem from="1646295286866" duration="695000" />
     </task>
     <servers />
   </component>
