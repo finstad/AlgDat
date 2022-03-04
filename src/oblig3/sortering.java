@@ -5,42 +5,70 @@ import java.io.*;
 
 public class sortering {
 
-
-
-    public sortering(int metode, int n) {
-
+    public sortering(int metode, int n, int z) {
         long tid = 0;
 
-
-        if (metode == 1){
-            tid = System.currentTimeMillis();
-            instikkSortering(randomTall(n));
-            tid = System.currentTimeMillis() - tid;
-
-            System.out.printf("Instikksortering tid: %2.3f", tid/1000.0);
-        }
-        if (metode == 2){
-            tid = System.currentTimeMillis();
-            quickSort(randomTall(n), 0, n-1);
-            tid = System.currentTimeMillis() - tid;
-
-            System.out.printf("Quicksort tid: %2.3f", tid/1000.0);
-        }
-        if (metode == 3){
-            tid = System.currentTimeMillis();
-            fletteSortering(randomTall(n), 0, n-1);
-            tid = System.currentTimeMillis() - tid;
-
-            System.out.printf("Flettesortering tid: %2.3f", tid/1000.0);
-        }
-        if (metode == 4){
-            tid = System.currentTimeMillis();
-            radixSortering(randomTall(n));
-            tid = System.currentTimeMillis() - tid;
-
-            System.out.printf("Radixsortering tid: %2.3f", tid/1000.0);
+        if(z == 1) {
+            if (metode == 1) {
+                tid = System.currentTimeMillis();
+                instikkSortering(randomTall(n));
+                tid = System.currentTimeMillis() - tid;
+                System.out.printf("Instikksortering tid: %2.3f", tid / 1000.0);
+            }
+            if (metode == 2) {
+                tid = System.currentTimeMillis();
+                quickSort(randomTall(n), 0, n - 1);
+                tid = System.currentTimeMillis() - tid;
+                System.out.printf("Quicksort tid: %2.3f", tid / 1000.0);
+            }
+            if (metode == 3) {
+                tid = System.currentTimeMillis();
+                fletteSortering(randomTall(n), 0, n - 1);
+                tid = System.currentTimeMillis() - tid;
+                System.out.printf("Flettesortering tid: %2.3f", tid / 1000.0);
+            }
+            if (metode == 4) {
+                tid = System.currentTimeMillis();
+                radixSortering(randomTall(n));
+                tid = System.currentTimeMillis() - tid;
+                System.out.printf("Radixsortering tid: %2.3f", tid / 1000.0);
+            }
         }
 
+        if(z == 2){
+            if (metode == 1) {
+                tid = System.currentTimeMillis();
+                instikkSortering(randomTall(n));
+                tid = System.currentTimeMillis() - tid;
+
+                System.out.println(" n       Tid(ms) Best       Worst");
+                System.out.printf("%6d %6d %6.4e %6.4e", n, tid, (float)tid/((float)n), (float)tid/((float)n*n));
+            }
+            if (metode == 2) {
+                tid = System.currentTimeMillis();
+                quickSort(randomTall(n), 0, n - 1);
+                tid = System.currentTimeMillis() - tid;
+
+                System.out.println(" n       Tid(ms) Best       Worst");
+                System.out.printf("%6d %6d %6.4e %6.4e", n, tid, (float)tid/((float)n*Math.log(n)), (float)tid/((float)n*n));
+            }
+            if (metode == 3) {
+                tid = System.currentTimeMillis();
+                fletteSortering(randomTall(n), 0, n - 1);
+                tid = System.currentTimeMillis() - tid;
+
+                System.out.println(" n       Tid(ms) Best       Worst");
+                System.out.printf("%6d %6d %6.4e %6.4e", n, tid, (float)tid/((float)n*Math.log(n)), (float)tid/((float)n*Math.log(n)));
+            }
+            if (metode == 4) {
+                tid = System.currentTimeMillis();
+                radixSortering(randomTall(n));
+                tid = System.currentTimeMillis() - tid;
+
+                System.out.println(" n       Tid(ms) Best       Worst");
+                System.out.printf("%6d %6d %6.4e %6.4e", n, tid, (float)tid/((float)n), (float)tid/((float)n*n));
+            }
+        }
     }
 
     public static void instikkSortering(int tall[]){
@@ -62,7 +90,6 @@ public class sortering {
 
     public static void quickSort(int tall[], int min, int max){
         //System.out.println(Arrays.toString(tall));
-
         int index;
 
         if (max - min > 0) {
@@ -78,7 +105,6 @@ public class sortering {
         if (min == max){
             return;
         }
-
         int temp[];
         int index1, venstre, hoyre;
         int storrelse = max - min + 1;
@@ -191,8 +217,11 @@ public class sortering {
         System.out.println("Velg sorteringsmetode");
         System.out.println("1 = Instikk sortering, 2 = Quicksort, 3 = Flettesortering, 4 = Radixsort");
         int metode = scanner.nextInt();
+        System.out.println("Hva skal programmet gjøre?");
+        System.out.println("1 = Beregne hvor lang tid sorteringen bruker, 2 = Estimere konstanten C");
+        int z = scanner.nextInt();
 
-        sortering sorter = new sortering(metode, n);
+        sortering sorter = new sortering(metode, n, z);
     }
 }
 
