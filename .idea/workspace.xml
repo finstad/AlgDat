@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig2/KnightTour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig2/testLosning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig3/sortering.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgDat/oblig3/sortering.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +39,13 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.sortering">
-    <configuration name="Flyplass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oblig1.Flyplass" />
+  <component name="RunManager" selected="Application.BSTord">
+    <configuration name="BSTord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oblig4.BSTord" />
       <module name="AlgDat" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oblig1.*" />
+          <option name="PATTERN" value="oblig4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BSTord" />
         <item itemvalue="Application.sortering" />
         <item itemvalue="Application.springerProblemet" />
         <item itemvalue="Application.KnightTour" />
         <item itemvalue="Application.testLosning" />
-        <item itemvalue="Application.Flyplass" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +145,10 @@
       <workItem from="1646133694227" duration="5483000" />
       <workItem from="1646223912417" duration="1833000" />
       <workItem from="1646295286866" duration="695000" />
+      <workItem from="1647254845287" duration="4767000" />
+      <workItem from="1647280689090" duration="3039000" />
+      <workItem from="1647337077767" duration="8445000" />
+      <workItem from="1647513648390" duration="2219000" />
     </task>
     <servers />
   </component>
