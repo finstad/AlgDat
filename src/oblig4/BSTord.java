@@ -1,6 +1,7 @@
 package oblig4;
 import java.io.*;
-import java.util.ArrayList;
+import java.util.*;
+import java.lang.*;
 
 public class BSTord {
 
@@ -14,11 +15,9 @@ public class BSTord {
             this.ord = ord;
             venstre = hoyre = null;
         }
-
         void skrivUt(){
             System.out.print(ord + " Count: " + antall + ", ");
         }
-
     }
 
     private treNode root;
@@ -83,8 +82,7 @@ public class BSTord {
     }
 
 
-    public static void main (String argv[]) {
-        ArrayList<String> test = new ArrayList<>();
+    public static void main (String[] argv) {
         BSTord tre = new BSTord();
 
         try
@@ -96,21 +94,11 @@ public class BSTord {
             int x = input.nextToken();
             while (x != input.TT_EOF) {
                 if (input.ttype == input.TT_WORD)
-                    //System.out.println(input.sval.toUpperCase());
-                    tre.settInn(input.sval.toUpperCase());
-                    //test.add(input.sval.toUpperCase());
+                    tre.settInn(input.sval.toUpperCase().replace(".", ""));
                 x = input.nextToken();
             }
 
             tre.skrivUtTre();
-            //System.out.println(test);
-            //System.out.println(test.size());
-            //System.out.println(test.get(2).compareTo(test.get(3)));
-            //System.out.println(tre);
-
-            /*for (int i = 0; i < test.size() - 1; i++) {
-                tre.settInn(test.get(i));
-            }*/
         }
         catch (IOException e) {};
 
