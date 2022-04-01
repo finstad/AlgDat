@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a88ff956-9442-4b5c-922f-6cf04f777787" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig3/sortering.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgDat/oblig3/sortering.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig4/BSTord$treNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgDat/oblig4/BSTord$treNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlgDat/oblig4/BSTord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlgDat/oblig4/BSTord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oblig4/BSTord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig4/BSTord.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +38,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.BSTord">
+  <component name="RunManager" selected="Application.RobinHood">
     <configuration name="BSTord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oblig4.BSTord" />
       <module name="AlgDat" />
@@ -56,12 +52,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KnightTour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oblig2.KnightTour" />
+    <configuration name="HashLinear" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oblig5.HashLinear" />
       <module name="AlgDat" />
+      <option name="PROGRAM_PARAMETERS" value="1927" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oblig2.*" />
+          <option name="PATTERN" value="oblig5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RobinHood" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oblig5.RobinHood" />
+      <module name="AlgDat" />
+      <option name="PROGRAM_PARAMETERS" value="30" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oblig5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,26 +106,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="springerProblemet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oblig2.springerProblemet" />
-      <module name="AlgDat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oblig2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.BSTord" />
+      <item itemvalue="Application.HashLinear" />
+      <item itemvalue="Application.sortering" />
+      <item itemvalue="Application.sortTest" />
+      <item itemvalue="Application.RobinHood" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RobinHood" />
+        <item itemvalue="Application.HashLinear" />
         <item itemvalue="Application.BSTord" />
         <item itemvalue="Application.sortering" />
         <item itemvalue="Application.sortTest" />
-        <item itemvalue="Application.springerProblemet" />
-        <item itemvalue="Application.KnightTour" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +159,10 @@
       <workItem from="1647513648390" duration="2219000" />
       <workItem from="1646385285286" duration="4833000" />
       <workItem from="1647861143686" duration="166000" />
+      <workItem from="1648550320567" duration="6774000" />
+      <workItem from="1648575195857" duration="3244000" />
+      <workItem from="1648637192639" duration="3538000" />
+      <workItem from="1648660056090" duration="1189000" />
     </task>
     <servers />
   </component>
