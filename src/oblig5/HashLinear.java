@@ -58,6 +58,8 @@ public class HashLinear {
         int neste = h;
 
 
+        //ENDRET PÅ HVORDAN ELEMENTER BLIR LAGT TIL I WHILE LOOPEN
+
         while (hashTabell[neste] != null) {
 
             //la her til en swap som flytter en ett hakk til høyre
