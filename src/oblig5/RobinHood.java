@@ -55,23 +55,29 @@ public class RobinHood {
         // Beregner hashverdien
         int h = hash(S);
         String s2 = null;
-        int hashOffset;
+        int nyHash;
         int currentHashOffset;
+        int hashOffset = 0;
         int neste = h;
 
         System.out.println(h);
 
 
+        // ENDRET PÅ STARTEN AV WHILE LOOPEN, ENDRE MÅTEN ELEMNTER BLIR SJEKKET OG BYTTET
         while (hashTabell[neste] != null) {
 
             //la her til en swap som flytter en ett hakk til høyre
-            hashOffset = hash(hashTabell[neste]) - h;
-            currentHashOffset = neste - h;
+            nyHash = hash(hashTabell[neste]);
+            currentHashOffset = neste - nyHash;
 
-            if(currentHashOffset > hashOffset){
+            if(currentHashOffset < 0){
+                currentHashOffset = neste + (hashLengde - nyHash);
+            }
+
+            if(currentHashOffset < hashOffset){
                 s2 = hashTabell[neste];
                 hashTabell[neste] = S;
-                S = s2;
+                hashOffset = currentHashOffset;
             }
 
             // Ny probe
@@ -93,7 +99,7 @@ public class RobinHood {
 
 
 
-        hashTabell[neste] = S;
+        hashTabell[neste] = s2;
         // Ã˜ker antall elementer som er lagret
         n++;
     }
@@ -156,7 +162,7 @@ public class RobinHood {
             System.exit(1);
         }
 
-        File fil = new File("src/oblig5/test.txt");
+        File fil = new File("src/oblig5/cars.txt");
 
 
         Scanner input = new Scanner(fil);
