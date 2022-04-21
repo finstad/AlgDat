@@ -37,8 +37,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.RobinHood">
+  <component name="RunManager" selected="Application.topSort">
     <configuration name="BSTord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oblig4.BSTord" />
       <module name="AlgDat" />
@@ -80,19 +81,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sortTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oblig3.sortTest" />
-      <module name="AlgDat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oblig3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="sortering" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oblig3.sortering" />
       <module name="AlgDat" />
@@ -106,20 +94,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="topSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oblig6.topSort" />
+      <module name="AlgDat" />
+      <option name="PROGRAM_PARAMETERS" value="src/oblig6/graf_topsort_2.txt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oblig6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BSTord" />
       <item itemvalue="Application.HashLinear" />
       <item itemvalue="Application.sortering" />
-      <item itemvalue="Application.sortTest" />
       <item itemvalue="Application.RobinHood" />
+      <item itemvalue="Application.topSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.topSort" />
         <item itemvalue="Application.RobinHood" />
         <item itemvalue="Application.HashLinear" />
         <item itemvalue="Application.BSTord" />
         <item itemvalue="Application.sortering" />
-        <item itemvalue="Application.sortTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +165,8 @@
       <workItem from="1648575195857" duration="3244000" />
       <workItem from="1648637192639" duration="3538000" />
       <workItem from="1648660056090" duration="1189000" />
+      <workItem from="1650469990980" duration="4436000" />
+      <workItem from="1650532925489" duration="2526000" />
     </task>
     <servers />
   </component>
